@@ -53,10 +53,10 @@ const puppeteerMe = async (formData) => {
   await page.type('#contenu', body);
   log += '\nfinal body => ';
   log += body;
-  await page.click('#submit');
+  //await page.click('#submit');
   //await page.waitForNavigation();
-  log += '\nnew page url ';
-  log += page.url();
+  //log += '\nnew page url ';
+  //log += page.url();
   return log;
 };
 
