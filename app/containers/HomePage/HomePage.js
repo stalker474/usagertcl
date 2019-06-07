@@ -16,8 +16,8 @@ export default class HomePage extends React.Component { // eslint-disable-line r
       ligne: '87',
       arret: 'Penon',
       direction: 'Venissieux',
-      horaire: (`${(new Date()).getHours()}:${(new Date()).getMinutes()}`),
-      horaire_reel: (`${(new Date()).getHours() }:${(new Date()).getMinutes()}`),
+      horaire: '17:46',
+      horaire_reel: '17:46',
       email: 'usagertcl@gmail.com',
       processing: false,
       done: false
