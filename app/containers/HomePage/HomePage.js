@@ -41,7 +41,7 @@ export default class HomePage extends React.Component { // eslint-disable-line r
     signaler = () => {
       const formData = this.state;
       this.setState({ processing: true });
-      return fetch('/api/submit', {
+      fetch('/api/submit', {
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json'
@@ -50,7 +50,9 @@ export default class HomePage extends React.Component { // eslint-disable-line r
         body: JSON.stringify(formData)
       }).then((response) => {
         this.setState({ processing: false, done: true });
-        console.log(response.json());
+        response.json().then((text) => {
+          console.log(text);
+        });
       });
     }
 
