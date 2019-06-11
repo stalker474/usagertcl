@@ -182,7 +182,7 @@ export default class HomePage extends React.Component { // eslint-disable-line r
                                 Message final : <div style={{ whiteSpace: 'pre-wrap' }}>{body}</div>
               </section>
               <section style={{ textAlign: 'center' }}>
-                {!this.state.processing && !this.state.done && <button disabled={this.state.processing} className="router-link" style={{ fontSize: '40px' }} onClick={this.signaler}>Signaler</button>}
+                {!this.state.processing && !this.state.done && <button disabled={this.state.processing} className="router-link" onClick={this.signaler}>Signaler</button>}
                 <br />
                 {this.state.processing && <label>En cours...</label>}
                 {this.state.done && <label>Signalé avec succès, verifiez votre messagerie</label>}

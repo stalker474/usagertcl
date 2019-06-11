@@ -8,7 +8,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
   render() {
     return (
         <div className="header">
-        <h1>Utilitaire de signalement rapide des retards</h1>
+        <h1>HELP TCL</h1>
         <img src={Banner2} alt="Logo" />
         <div className="nav-bar">
           <Link className="router-link" to="/">
